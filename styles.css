@@ -1,6 +1,7 @@
 *, *::after, *::before {
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: cursive;
+    color: darkred;
 }
 
 body{
@@ -16,8 +17,8 @@ body{
     width: 300px;
     height: 300px;
     background-color: rgba(255, 255, 255, .2);
-    border-radius: 50%;
-    border: 1px solid black;
+    border-radius: 10%;
+    border: 3px solid black;
     position: relative;
 }
 
