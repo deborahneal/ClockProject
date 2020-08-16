@@ -1,0 +1,103 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  background-color: sienna;  
+}
+
+.clock-container{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+}
+
+.clock-container .number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    text-align: center;
+    transform: rotate(var(--rotation));
+}
+
+.clock-container .number1 {
+    --rotation: 30deg;
+}
+.clock-container .number2{
+    --rotation: 60deg;
+}
+.clock-container .number3{
+    --rotation: 90deg;
+}
+.clock-container .number4{
+    --rotation: 120deg;
+}
+.clock-container .number5{
+    --rotation: 150deg;
+}
+.clock-container .number6{
+    --rotation: 180deg;
+}
+.clock-container .number7{
+    --rotation: 210deg;
+}
+.clock-container .number8{
+    --rotation: 240deg;
+}
+.clock-container .number9{
+    --rotation: 270deg;
+}
+.clock-container .number10{
+    --rotation: 300deg;
+}
+.clock-container .number11{
+    --rotation: 330deg;
+}
+
+.clock-container .Needle{
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    /* width: 10%;
+    height: 50%; */
+    /* background-color: black; */
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    
+}
+.clock-container::after{
+    content: '';
+    position: absolute;
+    background-color: 
+}
+.clock-container .Needle.seconds{
+    width: 3px;
+    height: 45%;
+    background-color: red;
+
+} 
+
+.clock-container .Needle.minutes{
+    width: 7px;
+    height: 40%;
+    background-color: black;
+}  
+
+.clock-container .Needle.hour{
+    width: 10px;
+    height: 35%;
+    background-color: black;
+}  
+
+
+
